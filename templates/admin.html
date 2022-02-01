@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Admin</title>
+	<link rel="stylesheet" type="text/css" href="{{url_for('static',filename='home.css')}}">
+</head>
+<body>
+	<h1 align="center">Admin Page</h1>
+
+	<!--navbar-->
+	<nav>
+        <section class="nav1  ">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="home1" href="adminpage">home</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="emplist" class="record">Records Page</a>
+
+        </section>
+    </nav>
+
+    <!--Banner-->
+
+    <div class="banner">
+    	<img src="{{url_for('static', filename='admin.jpg')}}" >
+    </div>
+
+</body>
+</html>

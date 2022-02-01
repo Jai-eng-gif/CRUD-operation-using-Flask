@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Login Page</title>
+	<link rel="stylesheet" type="text/css" href="{{url_for('static',filename='loginnreg.css')}}">
+
+
+</head>
+<body>
+<fieldset>
+		
+	<form action="adminLoginpage" method="POST">
+		<legend align="center"><h2  style="color: yellow;">Admin Login Page</h2></legend>
+		<table align="center">
+			<tr>
+				<td style="font-weight: bold;">Username</td>
+			</tr>
+			<tr>
+				<td><input type="text" name="name" placeholder="Username"></td>
+			</tr>
+
+			<tr>
+				<td style="font-weight: bold;"><br>Password</td>
+			</tr>
+			<tr>
+				<td><input type="password" name="passw" placeholder="Password"></td>
+			</tr>
+
+			<tr>
+				<td><br><input type="submit" name="save" value="Login"></td>
+			</tr>
+		</table>
+	</form>
+
+</fieldset>
+</body>
+</html>

@@ -1,0 +1,23 @@
+body{
+	background-image: url("login2.jpg");
+	height: 100%; 
+   background-position: center;
+}
+
+.name:focus{
+width: 300px;
+background-color: black;
+color: #ffffff;  
+}
+
+.name:focus-within{
+  width: 300px;
+background-color: black;
+color: #ffffff;  
+}
+
+
+#idd{
+	color: red;
+	font-weight: bold;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Records Page</title>
+</head>
+<body style="background: ghostwhite;">
+<fieldset style="border-color:yellowgreen;">
+	<legend><h1 style="color: orangered;">Employee Records</h1></legend>
+	
+	<table border="1px" cellspacing="6" cellpadding="5">
+		<tr>
+			<td style="background: yellow; font-weight: bold;">ID</td>
+			<td style="background: yellow; font-weight: bold;">Name</td>
+			<td style="background: yellow; font-weight: bold;">Contact</td>
+			<td style="background: yellow; font-weight: bold;">Email ID</td>
+			<td style="background: yellow; font-weight: bold;">Password</td>
+		
+		</tr>
+
+		
+			{% for i in elist %}
+		<tr>
+			<td style="background: olive;">{{i[0]}}</td>
+			<td style="background: olive;">{{i[1]}}</td>
+			<td style="background: olive;">{{i[2]}}</td>
+			<td style="background: olive;">{{i[3]}}</td>
+			<td style="background: olive;">{{i[4]}}</td>
+				
+		</tr>
+
+			{% endfor %}
+	</table>
+
+</fieldset>
+	<br>
+
+	<fieldset style="border-color: yellow; background:lightgrey;">
+	 <h4>Click below to delete employee</h4>
+	 <a href="delemp">Delete Emp</a>
+    </fieldset>
+
+	<br>
+
+	<fieldset style="border-color:yellow; background: lightgrey;">
+	 <h4>Click below to Update employee</h4>
+	 <td><a href="updemp">Update Emp</a></td>
+	</fieldset>
+
+	<br><br><br>
+
+	&nbsp;&nbsp;<a href="/adminpage">Home Page</a>
+
+</body>
+</html>

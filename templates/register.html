@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Register Page</title>
+	<link rel="stylesheet" type="text/css" href="{{url_for('static',filename='loginnreg.css')}}">
+	<script src="{{url_for('static',filename='js/jquerymini.js')}}"></script>
+	<script>
+		$(function(){
+			$('.name').blur(function(){
+				var id=$(this).val();
+				if(id==''){
+					$('#idd').html("Id is Required")
+				}
+				else{
+
+				}
+
+			});
+
+
+
+		});
+		
+
+
+	</script>
+	
+</head>
+<body>
+<div align="center">
+<form action="addEmp" method="POST">
+
+	<fieldset>
+			<legend align="center"><h1 style="color: orange;">Registeration Page</h1></legend>
+		<table align="center">
+			
+			<tr>
+				<th>ID</th>
+				<td><input type="text" class="name" name="ids"></td>
+				<span id="idd"></span>
+			</tr>
+
+			<tr>
+				<th>Name</th>
+				<td><input type="text" class="name" name="name"></td>
+			</tr>
+
+			<tr>
+				<th>Contact</th>
+				<td><input type="number" class="name" name="contact"></td>
+			</tr>
+
+			<tr>
+				<th>Email Id</th>
+				<td><input type="email" class="name" name="email"></td>
+			</tr>
+
+			<tr>
+				<th>Password</th>
+				<td><input type="password" class="name" name="passw"></td>
+			</tr>
+
+			<tr>
+				<td><br><br><input type="submit" name="save"></td>
+				<td><br><br><input type="reset" name="reset"></td>
+			</tr>
+			
+			
+		</table>
+	</fieldset>
+</form>
+
+	<a href="/">Home Page</a>
+
+</div>
+</body>
+</html>
